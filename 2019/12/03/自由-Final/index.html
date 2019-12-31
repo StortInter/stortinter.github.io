@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>自由 | Cold Dream</title><meta name="description" content="微型科幻小说"><meta name="keywords" content="SF"><meta name="author" content="Stort Inter"><meta name="copyright" content="Stort Inter"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/images/icon.png"><link rel="preconnect" href="//cdn.jsdelivr.net"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="自由"><meta name="twitter:description" content="微型科幻小说"><meta name="twitter:image" content="https://i.loli.net/2019/12/03/yiIpWm6Fd9nCXNG.jpg"><meta property="og:type" content="article"><meta property="og:title" content="自由"><meta property="og:url" content="https://stortinter.github.io/2019/12/03/%E8%87%AA%E7%94%B1-Final/"><meta property="og:site_name" content="Cold Dream"><meta property="og:description" content="微型科幻小说"><meta property="og:image" content="https://i.loli.net/2019/12/03/yiIpWm6Fd9nCXNG.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script><!-- hexo-inject:begin --><!-- hexo-inject:end -->const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_1549419_26c76o3yhcl.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.css"><link rel="canonical" href="https://stortinter.github.io/2019/12/03/%E8%87%AA%E7%94%B1-Final/"><link rel="prev" title="Schedule" href="/https:/stortinter.github.io/2019/12/07/Schedule/"><link rel="next" title="自由" href="/https:/stortinter.github.io/2019/12/03/%E8%87%AA%E7%94%B1/"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight_copy: 'false',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  copyright: undefined,
+  copy_copyright_js: false,
+  ClickShowText: undefined,
+  medium_zoom: 'true',
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"}
+  
+}</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Cold Dream</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div></div></span><span class="pull_right" id="search_button"></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="/images/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">6</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">6</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://i.loli.net/2019/12/03/yiIpWm6Fd9nCXNG.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">自由</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2019-12-03<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2019-12-31</time><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon" aria-hidden="true"></i><span>字数总计: </span><span class="word-count">3.1k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon" aria-hidden="true"></i><span>阅读时长: 8 分钟</span><span class="post-meta__separator">|</span><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>阅读量: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><p>终稿</p>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><hr>
+<p>纪元2233年3月21日，御堂茶馆，My Science杂志记者，吴一迅</p>
+<p>“刘教授，你好。”我匆匆忙忙赶到，看了眼时间，还好没有迟到。“小迅你好，你也不用这么着急，我也才刚到不久，来坐下吧，要喝点什么吗？”刘教授不紧不慢地放下手中的杂志，我认出来那是我们才出的重制版纸质杂志。“啊，谢谢了，那就红茶吧。”刘教授不紧不慢地操作着旁边的界面，“御堂家的红茶可是非常有名的，现在用茶叶泡茶的店家可是要几乎绝迹了呢。”</p>
+<p>刘教授是当今脑科学领域的领军人物，这次约她进行访谈的目的是要获取她当前研究的最新进展，虽然可以直接在线访谈，但是总编很喜欢这种一对一访谈的感觉，我也不是很好拒绝。</p>
+<p>“现在人们真的很想要了解最新的研究进展呢，不管是什么领域，都有着像以前追星一样的大量粉丝，我们也比以前忙的多了啊。”说着，我打开记录仪。随着教育的普及，和在线数据库的进一步开放，人们能够很轻易地获取想要学到的知识，一开始倒还好，但是时间一长，他们就把感兴趣的东西看完了，就想要了解科技前沿的知识，所以我们这种前沿学术杂志反而逐渐大众化了，要是放在几个世纪以前，那是想都不敢想的事情；拜其所赐，我们的销量也是猛增，好时代来临了啊。</p>
+<p>很快，茶上来了，刘教授端起茶杯，抿了一口，“总编之前发给我的信息我已经看过了，下面就开始吧。你觉得，人的思想可以被改变吗？” 嗯，干净果断，教授还是老样子，“我觉得的话，可以，以前不是有一个铁路工人的大脑受损导致性情大变的例子吗？”我呷了一口茶，味道还真不错，为什么以前就没想过喝红茶呢？</p>
+<p>“不错，你这个例子举得很好，人的思维是和大脑密切相关的，那位铁路工人之后大约100年后，在欧美流行起的脑白质切除术也是相似的例子：通过切除所谓‘病人’的脑白质来达到治疗精神疾病的效果，但是实际上手术对象在经过手术后往往丧失精神冲动，表现出类似痴呆、弱智的迹象。”刘教授说着，吃了一点附赠的茶点，“从我们外人的角度来看，只是他们的思维发生了改变，但是对他们自己来说，更像是换了一个人一样，是更加深层次的变化；所以脑白质切除术不可能受到认可，它对人造成的改变也是不可逆的，过于剧烈。除了这种直接结构上的改变，也有通过外界刺激来改变思维的例子。”</p>
+<p>“雷电法王杨XX吗？我小的时候父母经常用这个来吓唬我呢，”我迅速地调出数据，“啧，戒网瘾中心竟然开了这么久，那些孩子真是可怜啊。”“嗯，通过电击和精神压力来改变他们的思想，真是一点也不优雅啊。刚才我们所说的便是以前人们曾用过的改变思想的方式中主要的几种。但是，我们近来的研究发现，人的大脑中存在着某种接口一样的东西，仅仅是使用特定的信号进行刺激，便能改变，不，不应该说是改变，它更像是添加一种想法，类似于及其强烈的心理暗示，并且被影响的人并不会想到这不是他真正所想的事情。很有意思，对吧？”</p>
+<p>听刘教授说着，我又喝了一口茶，“嗯？我为什么会想要红茶呢？”茶叶这种东西我还是从很古老的数据库上找到的，这是家茶馆没错，但是我也不知道这家店有卖红茶啊。“不错啊，小迅，感觉很敏锐，我确实想让你试试这里的红茶，要不就是白来这里了吗？”刘教授笑着，在我面前晃了晃茶杯，然后从旁边的包里拿出来一个小盒子，“所以就用它让你试了一下。”我看了看那个黑漆漆方盒子，上面除了一个大大的α以外便没有别的标记了，又看了眼自己手中的红茶，不禁有些怀疑，真的是那个装置影响了我的思维吗？也可能只是因为我在门口时看到了这家店的名字，然后联想到了以前看到过的红茶。“你可以叫它脑波扰动装置，我们实验组把它简称α装置，顾名思义，现在也只是一个初测版本，功能还没有开发完善，所以也只能影响目前为止你所知道的事情，我也是从你们杂志社的数据库上找到的这家店，就猜到你一定会知道红茶这个东西；如果你没有认真看资料的话，那就没意思了呢。”刘教授把杯子里的茶一饮而尽，“现在相关实验正在开展中了，相信很快会有更深入的研究出来，到时候我们再聊。我就先走了，小迅再见。”“啊，刘教授慢走。”我坐在椅子上，仔细回忆自己当时研究社里数据库的情景，依稀记得是有这么个文档：《200年前的优雅生活》；我将信将疑地把杯中的茶喝完，起身离去。 </p>
+<p>纪元2233年6月15日，余烬研究所，刘文源教授</p>
+<p>我把杯中的红茶喝完，“果然合成出来的没有茶叶跑出来的有感觉啊，有时候还是会想起那个时候的事情呢，不知道刘教授现在过得如何。”我打开聚合终端，看了看最近的新闻，完全找不到刘教授的相关资料了，有空拜托数据库管理员去找一下吧，我扫了眼周围的同事，最近大家的工作热情真的是越发高涨了啊，我也继续吧。</p>
+<p>自从“思想接口”被发现之后，我们便开展了大量相关实验，最初的实验者便是组里的同事们，他们对自己的思维进行干涉，让自己对这个课题更加专心，因为大家本来就对这个课题非常地上心，对于我们来说，能够进行这样的研究是非常自豪和幸福的，所以一开始影响并不是很明显，我们还以为是数值设置错误，直到世界联合日的时候隔壁组的人来找我们庆祝，我们才发现自己已经很久没有休假了，当然，上司还是照样给了我们加班费。大家都不知不觉干了这么久，课题进展非常迅速，很快项目也被政府所知晓，并且提级为重点保密项目，有越来越多的人加入到我们的实验室，并且很快为我们分配了新的实验室，新实验设备已经准备就绪了，我们要离开这里了。</p>
+<p>纪元2235年2月13日， My Science杂志本部，思想干涉项目主编，吴一迅</p>
+<p>我看着窗外，明晃晃的阳光给远方的高塔拉了一条长长的影子，塔顶的施工人员已经撤下，那座塔原本是为了给城市里的量子通信组件升级的，但是现在它多了一项新的功能——广域思维干涉，虽然它并没有明确向公众告知。我打开终端，查阅着这几年来我搜集的资料：广域思想干涉是一年前由刘教授领导的实验室所开发，能够大范围地影响人的思维，这种影响是那种仿佛自己本来就有那种方法一样，类似于一种心理暗示，但是它的工作方式与心理暗示完全不一样，这是利用刘教授组所发现人类固有的“思想接口”所实现，人类在进化时所产生的一个诡异的突变；对其进一步地研究便得到了广域思想干涉装置，在联合政府的大力支持下，已经在全球各大城市中隐蔽安装，现在那个塔便是最后一个装置了，明天便会统一启动。我给自己泡了杯红茶，坐在椅子上看着茶叶在水中翻飞，那不受约束的样子真的非常美妙，但是我们的自由很快就会不复存在了吧。</p>
+<p>纪元2235年5月14日，川中公寓，吴一迅</p>
+<p>​     我在家里躺着，等待着装置的启动，如果当初我没有接手这个项目，就不会知道这些，在不知情的情况下失去什么反而不会像我现在这样痛苦；我面前的终端上只有一个时钟，秒数无情地跳动着，就快要到时间了，我想起当时刘教授给我推荐红茶时的情景，那股淡淡的涩味真是十分怀念。“时辰已到！”突然想起以前在数据库里看到的这句话，我笑了，至少，现在我能自由地掌握自己的生死，我走到阳台，抬头看了一眼那座高耸的尖塔，纵身一跃。</p>
+<p>纪元2235年5月13日，未知地区研究基地，所长，刘文源</p>
+<p>​     我飞速地敲着键盘，好了，完成了，这样我们都能获得真正的自由！我从电脑上拿下储存器，走向中央控制室，后面还是跟着两个士兵，真是形影不离啊，走到门前，刷卡进去，他们正要跟进来，我转身关上了控制室的门，听着他们在外面敲着门，叫喊着，我把写好的储存器插在了控制台上；编写好的程序迅速获取了权限，将修改的参数发往全球的广域思维干涉装置，这个参数比原来大了100倍，足够破坏“思想接口”，这样再也不会有人被控制了。我取下自己的发卡，向着控制台旁边的插座火线捅了进去。</p>
+<p>纪元2236年，最后的记录</p>
+<p>​     ……</p>
+<p>​     人们获得了自由，同时也失去了约束，在这样的情况下，暴力的种子迅速发芽生长，相互之间的微小的矛盾被迅速放大，很快小至亲戚朋友，大到国家之间，充满着斗争，但这只是开始，无处不在的暴力催化了人们心中的恐惧，在心理失去约束的情况下一批又一批的人们选择了最快捷的解脱方式——自杀，就这样，人口锐减，到今天笔者记录时，总人口已不到以前的10%了。这就是人们所追求的自由吗？</p>
+<p>当真正消失之时，才是真正的自由吧，这么想来，只有死亡才能带来真正的自由啊，那么，记录就到此为止吧。</p>
+<p>114.514光年外，社会学课后小组讨论</p>
+<p>“E458-X上的实验样本只剩下原来的5%了，看样子这次的Project要赶不上DDL了啊。”</p>
+<p>“你也知道做不完，我费劲心思设计的项目，你偷偷加了后门，还好意思说，这几天你还是别睡觉了，一定要做完。”</p>
+<p>“好了我知道了，当时就不该图方便用电磁波的，这次我把后门改成引力波控制。”</p>
+<p>“别再搞这种没必要的东西了，我设计的东西你还不放心吗？”</p>
+<p>“好了好了，我知道了，已经删掉了，抓紧时间，那我们再来一遍吧。”</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined" target="_blank" rel="noopener">Stort Inter</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="/https:/stortinter.github.io/2019/12/03/%E8%87%AA%E7%94%B1-Final/">https://stortinter.github.io/2019/12/03/%E8%87%AA%E7%94%B1-Final/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://stortinter.github.io">Cold Dream</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/SF/">SF    </a></div><div class="post_share"></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2019/12/07/Schedule/"><img class="prev_cover lazyload" data-src="https://i.loli.net/2019/12/07/QVFx3nl9P5EwNTi.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>Schedule</span></div></a></div><div class="next-post pull_right"><a href="/2019/12/03/%E8%87%AA%E7%94%B1/"><img class="next_cover lazyload" data-src="https://i.loli.net/2019/12/03/yiIpWm6Fd9nCXNG.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>自由</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div id="gitalk-container"></div><script>var gitalk = new Gitalk({
+  clientID: '5eee9c5a79e42db1e197',
+  clientSecret: '7a1cdd926d229e737d9b291167d9c8f1aa495620',
+  repo: 'stortinter.github.io',
+  owner: 'stortinter',
+  admin: 'stortinter',
+  id: md5(decodeURI(location.pathname)),
+  language: ''
+})
+gitalk.render('gitalk-container')</script></div></div></div><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 By Stort Inter</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">全ては夢と――これが、名残りの華よ</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.js"></script><script src="/js/tw_cn.js"></script><script>translateInitilization()
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body></html>
